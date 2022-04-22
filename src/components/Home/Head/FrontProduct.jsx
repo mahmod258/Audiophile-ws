@@ -1,0 +1,29 @@
+import React from "react";
+import Bitmap from "../../../assets/home/desktop/Bitmap.png";
+function FrontProduct() {
+  return (
+    <div className="front-product d-flex flex-row justify-content-around justify-content-center align-items-center ">
+      <div>
+        <h4>
+          NEW <span>PRODUCT</span>
+        </h4>
+        <h1>
+          <span>XX99 MARK II </span> <span>HEADPHONES</span>
+        </h1>
+        <p>
+          <span>Experience natural, lifelike audio and exceptional</span>
+          <span>build quality made for the passionate music</span>
+          <span>enthusiast.</span>
+        </p>
+        <button>
+          <p className="m-0">SEE PRODUCT</p>
+        </button>
+      </div>
+      <div>
+        <img src={Bitmap} alt="" />
+      </div>
+    </div>
+  );
+}
+
+export default FrontProduct;

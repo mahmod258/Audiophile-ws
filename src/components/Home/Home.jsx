@@ -1,9 +1,9 @@
 import React from "react";
-import Head from "../Head/Head";
+import Head from "./Head/Head";
 
 function Home() {
   return (
-    <div>
+    <div className="home text-white">
       <Head />
     </div>
   );

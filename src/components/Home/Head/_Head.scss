@@ -1,0 +1,93 @@
+.home .head {
+  font-size: 14px;
+  background-color: var(--dark-color1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100px 1000px;
+  .front-product {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 12px;
+    @media (max-width: 2000px) {
+      font-size: 8px;
+      @media (max-width: 1450px) {
+        font-size: 10px;
+        padding: 0 !important;
+        padding-bottom: 15em !important;
+        > div:first-child {
+          position: absolute;
+          top: 43%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          align-items: center !important;
+          text-align: center;
+        }
+      }
+    }
+    padding: 2em 30em;
+    @media (max-width: 2300px) {
+      padding: 1em 9.5%;
+    }
+    @media (max-width: 1000px) {
+      font-size: 8px;
+    }
+    > div:first-child {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: flex-start;
+      padding-bottom: 100px;
+      h4 {
+        color: rgba(255, 255, 255, 0.491);
+        letter-spacing: 0.8em;
+        font-size: 2em;
+        span {
+          margin-left: 0.5em;
+        }
+      }
+      h1 {
+        font-size: 9em;
+        line-height: 1em;
+        font-weight: 600;
+        span {
+          display: block;
+        }
+      }
+      p {
+        font-size: 2.2em;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.5em;
+        span {
+          display: block;
+        }
+      }
+      button {
+        background-color: transparent;
+        color: white;
+        border: 0;
+        width: 20em;
+        height: 5.5em;
+        font-size: 1.5em;
+        outline: 3px solid var(--brown);
+        transition: 0.3s;
+        &:hover {
+          background-color: var(--brown);
+        }
+      }
+    }
+    > div:last-child {
+      width: 90em;
+      height: 90em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 110%;
+        height: 110%;
+      }
+    }
+  }
+}
