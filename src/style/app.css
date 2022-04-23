@@ -57,53 +57,10 @@ nav > div:first-child svg {
 }
 nav .small-menu {
   display: none;
-  gap: 2em;
+  background-color: var(--white);
   padding: 7em 2em;
   padding-bottom: 4em;
-}
-@media (max-width: 780px) {
-  nav .small-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-nav .small-menu > div {
-  background-color: var(--gray);
-  border-radius: 16px;
   width: 100%;
-  padding-top: 8em;
-  padding-bottom: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-nav .small-menu > div p {
-  font-size: 1.5em;
-  font-weight: 800;
-}
-nav .small-menu > div button {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.5);
-}
-nav .small-menu > div button svg {
-  width: 0.8em;
-  height: 0.8em;
-  margin-left: 10px;
-}
-nav .small-menu > div img {
-  position: absolute;
-  top: -4em;
-  width: 7.5em;
 }
 
 .home header {
@@ -220,9 +177,64 @@ nav .small-menu > div img {
   height: 110%;
 }
 
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+@media (max-width: 780px) {
+  .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2em;
+  }
+}
+.products > div {
+  background-color: var(--gray);
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 8em;
+  padding-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.products > div p {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.products > div button {
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.products > div button:hover {
+  color: var(--brown) !important;
+}
+.products > div button svg {
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 10px;
+}
+.products > div img {
+  position: absolute;
+  top: -4em;
+  width: 7.5em;
+}
+
 :root {
   --brown: #d87d4a;
-  --dark-color1: #141414;
+  --dark-color1: #121212;
   --gray: #f1f1f1;
   --very-gray: #fafafa;
   --light-brown: #fbaf85;

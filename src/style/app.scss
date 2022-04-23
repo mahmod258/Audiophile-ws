@@ -1,12 +1,12 @@
 // Home files
 @use "../components/Nav.scss";
-@use "../components/Home/Home.scss";
 @use "../components/Home/Head/Head";
+@use "../components/Home/Products";
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap");
 :root {
   --brown: #d87d4a;
-  --dark-color1: #141414;
+  --dark-color1: #121212;
   --gray: #f1f1f1;
   --very-gray: #fafafa;
   --light-brown: #fbaf85;

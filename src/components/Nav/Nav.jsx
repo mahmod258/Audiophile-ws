@@ -1,5 +1,5 @@
 import React from "react";
-import SmallMenu from "./Home/Head/SmallMenu";
+import Products from "../Home/Products/Products";
 import { useState } from "react";
 
 function Nav() {
@@ -44,7 +44,11 @@ function Nav() {
           />
         </svg>
       </div>
-      {toggle ? <SmallMenu /> : null}
+      {toggle ? (
+        <div className="small-menu">
+          <Products />
+        </div>
+      ) : null}
     </nav>
   );
 }

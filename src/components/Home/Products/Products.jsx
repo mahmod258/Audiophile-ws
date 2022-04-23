@@ -3,9 +3,9 @@ import image1 from "../../../assets/home/mobile/image-removebg-preview(41).png";
 import image2 from "../../../assets/home/mobile/image-removebg-preview(42).png";
 import image3 from "../../../assets/home/mobile/image-removebg-preview(38).png";
 
-function SmallMenu() {
+function Products() {
   return (
-    <div className="small-menu  bg-white text-dark w-100 justify-content-between">
+    <div className="products  bg-white text-dark w-100 justify-content-between">
       <div>
         <img src={image1} alt="" />
         <p>HEADPHONES</p>
@@ -70,4 +70,4 @@ function SmallMenu() {
   );
 }
 
-export default SmallMenu;
+export default Products;

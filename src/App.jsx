@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Nav />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Audiophile-ws" element={<Home />} />
         </Routes>
       </Router>
     </>
