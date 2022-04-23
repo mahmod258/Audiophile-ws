@@ -3,6 +3,7 @@ nav {
   background-color: var(--dark-color1);
   z-index: 100;
   width: 100%;
+  position: absolute !important;
 }
 @media (max-width: 1000px) {
   nav > div:first-child ul {
@@ -71,7 +72,8 @@ nav .small-menu {
 @media (max-width: 1200px) {
   .home header {
     font-size: 14px;
-    padding-bottom: 8em;
+    padding-bottom: 5em;
+    padding-top: 5em;
   }
 }
 @media (max-width: 1000px) {
@@ -232,6 +234,168 @@ nav .small-menu {
   width: 7.5em;
 }
 
+.section-1 {
+  background-color: var(--brown);
+  gap: 20%;
+  height: 37.5em;
+  padding: 0 10em 0 10em;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url("../assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -120px -100px;
+}
+@media (max-width: 1000px) {
+  .section-1 {
+    height: 45em;
+    padding-bottom: 4em;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    background-position: -120px -200px;
+  }
+  .section-1 > div:first-of-type img {
+    width: 12.5em !important;
+    -webkit-transform: translate(0px, 65px);
+            transform: translate(0px, 65px);
+  }
+  .section-1 > div:last-of-type {
+    text-align: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+.section-1 > div:first-of-type img {
+  width: 25em;
+  -webkit-transform: translate(0px, 65px);
+          transform: translate(0px, 65px);
+}
+.section-1 > div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.8em;
+}
+.section-1 > div:last-of-type h1 {
+  font-weight: 600;
+  font-size: 3em;
+}
+.section-1 > div:last-of-type h1 span {
+  display: block;
+}
+.section-1 > div:last-of-type p {
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+}
+.section-1 > div:last-of-type p span {
+  display: block;
+}
+.section-1 > div:last-of-type button {
+  margin-top: 0.5em;
+  border: 0;
+  background-color: black;
+  width: 10em;
+  height: 3em;
+  color: var(--white);
+  letter-spacing: 1.2px;
+}
+
+.section-2 {
+  background-image: url("../assets/home/desktop/image-speaker-zx7.jpg");
+  background-size: cover;
+  height: 20em;
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1000px) {
+  .section-2 {
+    background-image: url("../assets/home/tablet/image-speaker-zx7.jpg");
+  }
+}
+.section-2 > div h1 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.section-2 > div button {
+  border: 2px solid black;
+  width: 11em;
+  height: 3.5em;
+  font-weight: 800;
+  font-size: 0.8em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.section-2 > div button:hover {
+  background-color: black;
+  color: var(--white);
+}
+
+.section-3 {
+  gap: 3em;
+  height: 20em;
+}
+@media (max-width: 1000px) {
+  .section-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 40em;
+  }
+  .section-3 > * {
+    height: 50%;
+  }
+}
+.section-3 > div:first-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-3 > div:last-child {
+  background-color: var(--gray);
+}
+.section-3 > div:last-child div {
+  margin-left: 5em;
+}
+.section-3 > div:last-child div h1 {
+  font-weight: 600;
+  font-size: 2.1em;
+  letter-spacing: 2.5px;
+  margin-bottom: 1em;
+}
+.section-3 > div:last-child div button {
+  border: 2px solid black;
+  color: var(--white);
+  background-color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 9.4em;
+  height: 3.2em;
+  font-size: 0.9em;
+}
+.section-3 > div:last-child div button:hover {
+  background-color: transparent;
+  color: black;
+}
+
 :root {
   --brown: #d87d4a;
   --dark-color1: #121212;
@@ -244,6 +408,10 @@ nav .small-menu {
 
 * {
   font-family: "Manrope", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+@media (max-width: 550px) {
+  main {
+    font-size: 3vw;
+  }
 }

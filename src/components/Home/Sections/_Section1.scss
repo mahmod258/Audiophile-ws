@@ -1,0 +1,62 @@
+.section-1 {
+  background-color: var(--brown);
+  gap: 20%;
+  height: 37.5em;
+  padding: 0 10em 0 10em;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url("../assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -120px -100px;
+  @media (max-width: 1000px) {
+    height: 45em;
+    padding-bottom: 4em;
+    flex-direction: column !important;
+    background-position: -120px -200px;
+    > div:first-of-type {
+      img {
+        width: 12.5em !important;
+        transform: translate(0px, 65px);
+      }
+    }
+    > div:last-of-type {
+      text-align: center;
+      align-items: center !important;
+    }
+  }
+  > div:first-of-type {
+    img {
+      width: 25em;
+      transform: translate(0px, 65px);
+    }
+  }
+  > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+    h1 {
+      font-weight: 600;
+      font-size: 3em;
+      span {
+        display: block;
+      }
+    }
+    p {
+      letter-spacing: 1.2px;
+      white-space: nowrap;
+      span {
+        display: block;
+      }
+    }
+    button {
+      margin-top: 0.5em;
+      border: 0;
+      background-color: black;
+      width: 10em;
+      height: 3em;
+      color: var(--white);
+      letter-spacing: 1.2px;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "./Head/Head";
-import Products from "./Products/Products";
+import Products from "../Products/Products";
+import Sections from "./Sections/Sections";
 function Home() {
   return (
-    <div className="home text-white">
+    <div className="home">
       <Head />
       <div
         className="container-sm"
@@ -11,6 +12,7 @@ function Home() {
       >
         <Products />
       </div>
+      <Sections />
     </div>
   );
 }

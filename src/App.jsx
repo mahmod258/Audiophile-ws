@@ -4,14 +4,14 @@ import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
-    <>
+    <main>
       <Nav />
       <Router>
         <Routes>
           <Route path="/Audiophile-ws" element={<Home />} />
         </Routes>
       </Router>
-    </>
+    </main>
   );
 }
 

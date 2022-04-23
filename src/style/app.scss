@@ -1,7 +1,11 @@
 // Home files
-@use "../components/Nav.scss";
+@use "../components/Nav/Nav";
 @use "../components/Home/Head/Head";
-@use "../components/Home/Products";
+@use "../components/Products/Products";
+// Sections files
+@use "../components/Home/Sections/Section1.scss";
+@use "../components/Home/Sections/Section2.scss";
+@use "../components/Home/Sections/Section3.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap");
 :root {
@@ -15,5 +19,9 @@
 }
 * {
   font-family: "Manrope", sans-serif;
-  box-sizing: border-box;
+}
+main {
+  @media (max-width: 550px) {
+    font-size: 3vw;
+  }
 }

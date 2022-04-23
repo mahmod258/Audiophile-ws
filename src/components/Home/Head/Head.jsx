@@ -3,7 +3,7 @@ import Bitmap from "../../../assets/home/desktop/Bitmap.png";
 
 function Head() {
   return (
-    <header className="d-flex align-items-center justify-content-center">
+    <header className="d-flex align-items-center justify-content-center text-white">
       <div className="front-product container-md d-flex flex-row  justify-content-between align-items-center ">
         <div>
           <h4>
@@ -17,9 +17,7 @@ function Head() {
             <span>build quality made for the passionate music</span>
             <span>enthusiast.</span>
           </p>
-          <button>
-            <p className="m-0">SEE PRODUCT</p>
-          </button>
+          <button>SEE PRODUCT</button>
         </div>
         <div>
           <img src={Bitmap} alt="" />

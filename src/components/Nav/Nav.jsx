@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../Home/Products/Products";
+import Products from "../Products/Products";
 import { useState } from "react";
 
 function Nav() {

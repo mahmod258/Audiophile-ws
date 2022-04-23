@@ -2,6 +2,7 @@ nav {
   background-color: var(--dark-color1);
   z-index: 100;
   width: 100%;
+  position: absolute !important;
   @media (max-width: 1000px) {
     > div:first-child {
       ul {

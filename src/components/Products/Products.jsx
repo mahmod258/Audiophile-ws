@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../../../assets/home/mobile/image-removebg-preview(41).png";
-import image2 from "../../../assets/home/mobile/image-removebg-preview(42).png";
-import image3 from "../../../assets/home/mobile/image-removebg-preview(38).png";
+import image1 from "../../assets/home/mobile/image-removebg-preview(41).png";
+import image2 from "../../assets/home/mobile/image-removebg-preview(42).png";
+import image3 from "../../assets/home/mobile/image-removebg-preview(38).png";
 
 function Products() {
   return (
