@@ -1,52 +1,50 @@
-.home .head {
-  font-size: 14px;
+.home header {
   background-color: var(--dark-color1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100px 1000px;
-  .front-product {
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 12px;
-    @media (max-width: 2000px) {
-      font-size: 8px;
-      @media (max-width: 1450px) {
-        font-size: 10px;
-        padding: 0 !important;
-        padding-bottom: 15em !important;
-        > div:first-child {
-          position: absolute;
-          top: 43%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          align-items: center !important;
-          text-align: center;
-        }
+  padding-top: 3em;
+  padding-bottom: 3em;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    padding-bottom: 8em;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    .front-product {
+      height: 45em;
+      background-image: url("../assets/home/desktop/Bitmap.png");
+      background-position: center center;
+      background-size: cover;
+      > div:last-child {
+        display: none !important;
       }
+      > div:first-child {
+        text-align: center;
+        align-items: center !important;
+      }
+      justify-content: center !important;
     }
-    padding: 2em 30em;
-    @media (max-width: 2300px) {
-      padding: 1em 9.5%;
-    }
-    @media (max-width: 1000px) {
-      font-size: 8px;
-    }
+  }
+  @media (max-width: 550px) {
+    font-size: 3vw;
+  }
+  .front-product {
+    position: relative;
+
     > div:first-child {
       display: flex;
       flex-direction: column;
       gap: 2em;
       align-items: flex-start;
-      padding-bottom: 100px;
       h4 {
         color: rgba(255, 255, 255, 0.491);
         letter-spacing: 0.8em;
-        font-size: 2em;
+        font-size: 1em;
         span {
           margin-left: 0.5em;
         }
       }
       h1 {
-        font-size: 9em;
+        font-size: 4em;
         line-height: 1em;
         font-weight: 600;
         span {
@@ -54,7 +52,7 @@
         }
       }
       p {
-        font-size: 2.2em;
+        font-size: 1em;
         letter-spacing: 1px;
         color: rgba(255, 255, 255, 0.75);
         line-height: 1.5em;
@@ -66,9 +64,9 @@
         background-color: transparent;
         color: white;
         border: 0;
-        width: 20em;
-        height: 5.5em;
-        font-size: 1.5em;
+        width: 9em;
+        height: 3em;
+        font-size: 1em;
         outline: 3px solid var(--brown);
         transition: 0.3s;
         &:hover {
@@ -77,14 +75,13 @@
       }
     }
     > div:last-child {
-      width: 90em;
-      height: 90em;
+      width: 40em;
+      height: 40em;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       img {
-        object-fit: cover;
         width: 110%;
         height: 110%;
       }

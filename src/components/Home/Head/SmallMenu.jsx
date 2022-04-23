@@ -5,7 +5,7 @@ import image3 from "../../../assets/home/mobile/image-removebg-preview(38).png";
 
 function SmallMenu() {
   return (
-    <div className="small-menu d-flex bg-white text-dark w-100 justify-content-between">
+    <div className="small-menu  bg-white text-dark w-100 justify-content-between">
       <div>
         <img src={image1} alt="" />
         <p>HEADPHONES</p>

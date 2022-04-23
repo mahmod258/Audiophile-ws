@@ -1,15 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap");
 nav {
   background-color: var(--dark-color1);
-  position: absolute !important;
-  top: 0;
-  left: 0;
   z-index: 100;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  nav > div:first-child ul {
+    display: none !important;
+  }
+  nav > div:first-child > div:first-child {
+    width: 25%;
+  }
+  nav > div:first-child > div:first-child svg {
+    display: block !important;
+  }
+  nav .small-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
 nav > div:first-child {
-  padding-bottom: 2.7em;
-  padding-top: 2.7em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+nav > div:first-child h1 {
+  font-size: 1.5em;
 }
 @media (max-width: 780px) {
   nav > div:first-child {
@@ -26,32 +42,23 @@ nav > div:first-child {
     width: 62% !important;
   }
 }
-@media (max-width: 1200px) {
-  nav > div:first-child ul {
-    display: none !important;
-  }
-  nav > div:first-child > div:first-child {
-    width: 35%;
-  }
-  nav > div:first-child > div:first-child svg {
-    display: block !important;
-  }
-}
 nav > div:first-child ul li {
   letter-spacing: 3px;
-  font-size: 1.3em;
+  font-size: 0.9em;
   cursor: pointer;
+  font-weight: lighter;
 }
 nav > div:first-child svg {
   cursor: pointer;
 }
 nav > div:first-child svg {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
 }
 nav .small-menu {
+  display: none;
   gap: 2em;
-  padding: 8em 3em;
+  padding: 7em 2em;
   padding-bottom: 4em;
 }
 @media (max-width: 780px) {
@@ -99,53 +106,50 @@ nav .small-menu > div img {
   width: 7.5em;
 }
 
-.home .head {
-  font-size: 14px;
+.home header {
   background-color: var(--dark-color1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100px 1000px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
-.home .head .front-product {
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 12px;
-  padding: 2em 30em;
-}
-@media (max-width: 2000px) {
-  .home .head .front-product {
-    font-size: 8px;
-  }
-}
-@media (max-width: 2000px) and (max-width: 1450px) {
-  .home .head .front-product {
-    font-size: 10px;
-    padding: 0 !important;
-    padding-bottom: 15em !important;
-  }
-  .home .head .front-product > div:first-child {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    text-align: center;
-  }
-}
-@media (max-width: 2300px) {
-  .home .head .front-product {
-    padding: 1em 9.5%;
+@media (max-width: 1200px) {
+  .home header {
+    font-size: 14px;
+    padding-bottom: 8em;
   }
 }
 @media (max-width: 1000px) {
-  .home .head .front-product {
-    font-size: 8px;
+  .home header {
+    padding-top: 1em;
+    padding-bottom: 3em;
+  }
+  .home header .front-product {
+    height: 45em;
+    background-image: url("../assets/home/desktop/Bitmap.png");
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .home header .front-product > div:last-child {
+    display: none !important;
+  }
+  .home header .front-product > div:first-child {
+    text-align: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
 }
-.home .head .front-product > div:first-child {
+@media (max-width: 550px) {
+  .home header {
+    font-size: 3vw;
+  }
+}
+.home header .front-product {
+  position: relative;
+}
+.home header .front-product > div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,50 +161,49 @@ nav .small-menu > div img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-bottom: 100px;
 }
-.home .head .front-product > div:first-child h4 {
+.home header .front-product > div:first-child h4 {
   color: rgba(255, 255, 255, 0.491);
   letter-spacing: 0.8em;
-  font-size: 2em;
+  font-size: 1em;
 }
-.home .head .front-product > div:first-child h4 span {
+.home header .front-product > div:first-child h4 span {
   margin-left: 0.5em;
 }
-.home .head .front-product > div:first-child h1 {
-  font-size: 9em;
+.home header .front-product > div:first-child h1 {
+  font-size: 4em;
   line-height: 1em;
   font-weight: 600;
 }
-.home .head .front-product > div:first-child h1 span {
+.home header .front-product > div:first-child h1 span {
   display: block;
 }
-.home .head .front-product > div:first-child p {
-  font-size: 2.2em;
+.home header .front-product > div:first-child p {
+  font-size: 1em;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5em;
 }
-.home .head .front-product > div:first-child p span {
+.home header .front-product > div:first-child p span {
   display: block;
 }
-.home .head .front-product > div:first-child button {
+.home header .front-product > div:first-child button {
   background-color: transparent;
   color: white;
   border: 0;
-  width: 20em;
-  height: 5.5em;
-  font-size: 1.5em;
+  width: 9em;
+  height: 3em;
+  font-size: 1em;
   outline: 3px solid var(--brown);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.home .head .front-product > div:first-child button:hover {
+.home header .front-product > div:first-child button:hover {
   background-color: var(--brown);
 }
-.home .head .front-product > div:last-child {
-  width: 90em;
-  height: 90em;
+.home header .front-product > div:last-child {
+  width: 40em;
+  height: 40em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,9 +215,7 @@ nav .small-menu > div img {
           justify-content: center;
   overflow: hidden;
 }
-.home .head .front-product > div:last-child img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.home header .front-product > div:last-child img {
   width: 110%;
   height: 110%;
 }

@@ -1,13 +1,30 @@
 nav {
   background-color: var(--dark-color1);
-  position: absolute !important;
-  top: 0;
-  left: 0;
   z-index: 100;
   width: 100%;
+  @media (max-width: 1000px) {
+    > div:first-child {
+      ul {
+        display: none !important;
+      }
+
+      > div:first-child {
+        width: 25%;
+        svg {
+          display: block !important;
+        }
+      }
+    }
+    .small-menu {
+      display: flex !important;
+    }
+  }
   > div:first-child {
-    padding-bottom: 2.7em;
-    padding-top: 2.7em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    h1 {
+      font-size: 1.5em;
+    }
     @media (max-width: 780px) {
       padding-left: 20px;
       padding-right: 20px;
@@ -19,36 +36,27 @@ nav {
         width: 62% !important;
       }
     }
-    @media (max-width: 1200px) {
-      ul {
-        display: none !important;
-      }
 
-      > div:first-child {
-        width: 35%;
-        svg {
-          display: block !important;
-        }
-      }
-    }
     ul {
       li {
         letter-spacing: 3px;
-        font-size: 1.3em;
+        font-size: 0.9em;
         cursor: pointer;
+        font-weight: lighter;
       }
     }
     svg {
       cursor: pointer;
     }
     svg {
-      width: 2em;
-      height: 2em;
+      width: 1.5em;
+      height: 1.5em;
     }
   }
   .small-menu {
+    display: none;
     gap: 2em;
-    padding: 8em 3em;
+    padding: 7em 2em;
     padding-bottom: 4em;
     @media (max-width: 780px) {
       flex-direction: column;
