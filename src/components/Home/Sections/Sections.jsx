@@ -4,10 +4,7 @@ import Section2 from "./Section2";
 import Section3 from "./Section3";
 function Sections() {
   return (
-    <div
-      className="container-md d-flex flex-column"
-      style={{ gap: "2em", margin: "8em auto" }}
-    >
+    <div className="container-md d-flex flex-column" style={{ gap: "2em" }}>
       <Section1 />
       <Section2 />
       <Section3 />

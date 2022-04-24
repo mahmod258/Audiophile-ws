@@ -68,6 +68,7 @@ nav .small-menu {
   background-color: var(--dark-color1);
   padding-top: 3em;
   padding-bottom: 3em;
+  margin-top: 0;
 }
 @media (max-width: 1200px) {
   .home header {
@@ -107,6 +108,8 @@ nav .small-menu {
 }
 .home header .front-product {
   position: relative;
+  padding-left: 5.5em;
+  padding-right: 5.5em;
 }
 .home header .front-product > div:first-child {
   display: -webkit-box;
@@ -198,8 +201,8 @@ nav .small-menu {
   background-color: var(--gray);
   border-radius: 5px;
   width: 100%;
-  padding-top: 8em;
-  padding-bottom: 2em;
+  padding-top: 9em;
+  padding-bottom: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +220,8 @@ nav .small-menu {
   font-weight: 800;
 }
 .products > div button {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
 }
 .products > div button:hover {
@@ -231,11 +235,12 @@ nav .small-menu {
 .products > div img {
   position: absolute;
   top: -4em;
-  width: 7.5em;
+  width: 15em;
 }
 
 .section-1 {
   background-color: var(--brown);
+  border-radius: 7.5px;
   gap: 20%;
   height: 37.5em;
   padding: 0 10em 0 10em;
@@ -303,8 +308,10 @@ nav .small-menu {
   margin-top: 0.5em;
   border: 0;
   background-color: black;
-  width: 10em;
-  height: 3em;
+  width: 11em;
+  height: 3.5em;
+  font-weight: 800;
+  font-size: 0.8em;
   color: var(--white);
   letter-spacing: 1.2px;
   border: 2px solid black;
@@ -318,6 +325,7 @@ nav .small-menu {
 .section-2 {
   background-image: url("../assets/home/desktop/image-speaker-zx7.jpg");
   background-size: cover;
+  border-radius: 7.5px;
   height: 20em;
   padding: 5em;
   display: -webkit-box;
@@ -369,6 +377,10 @@ nav .small-menu {
     height: 50%;
   }
 }
+.section-3 > div:first-child {
+  border-radius: 7.5px;
+  overflow: hidden;
+}
 .section-3 > div:first-child img {
   width: 100%;
   height: 100%;
@@ -376,6 +388,7 @@ nav .small-menu {
      object-fit: cover;
 }
 .section-3 > div:last-child {
+  border-radius: 7.5px;
   background-color: var(--gray);
 }
 .section-3 > div:last-child div {
@@ -393,13 +406,60 @@ nav .small-menu {
   background-color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 9.4em;
-  height: 3.2em;
-  font-size: 0.9em;
+  width: 11em;
+  height: 3.5em;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 .section-3 > div:last-child div button:hover {
   background-color: transparent;
   color: black;
+}
+
+.info {
+  gap: 10em;
+}
+@media (max-width: 1200px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    gap: 5em;
+  }
+  .info h1:first-of-type {
+    display: none !important;
+  }
+  .info h1:last-of-type {
+    display: block !important;
+  }
+  .info img:first-of-type {
+    display: none !important;
+  }
+  .info img:last-of-type {
+    display: inline-block !important;
+  }
+}
+.info > div:first-child h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  letter-spacing: 2px;
+}
+.info > div:first-child h1 > span {
+  display: block;
+}
+.info > div:first-child h1 > span span {
+  color: var(--brown);
+}
+.info > div:first-child p {
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  font-size: 1.1em;
+}
+.info > div:first-child p span {
+  display: block;
 }
 
 :root {
@@ -420,4 +480,8 @@ nav .small-menu {
   main {
     font-size: 3vw;
   }
+}
+
+.home > * {
+  margin-top: 10em;
 }

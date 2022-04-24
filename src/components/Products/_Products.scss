@@ -9,8 +9,8 @@
     background-color: var(--gray);
     border-radius: 5px;
     width: 100%;
-    padding-top: 8em;
-    padding-bottom: 2em;
+    padding-top: 9em;
+    padding-bottom: 1em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,7 +20,9 @@
       font-weight: 800;
     }
     button {
-      font-size: 1.4em;
+      font-size: 1.2em;
+      font-weight: 600;
+
       color: rgba(0, 0, 0, 0.5);
       &:hover {
         color: var(--brown) !important;
@@ -34,7 +36,7 @@
     img {
       position: absolute;
       top: -4em;
-      width: 7.5em;
+      width: 15em;
     }
   }
 }

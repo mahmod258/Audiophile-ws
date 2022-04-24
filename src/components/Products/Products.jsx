@@ -1,14 +1,14 @@
 import React from "react";
-import image1 from "../../assets/home/mobile/image-removebg-preview(41).png";
-import image2 from "../../assets/home/mobile/image-removebg-preview(42).png";
-import image3 from "../../assets/home/mobile/image-removebg-preview(38).png";
+import image1 from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import image2 from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import image3 from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
 
 function Products() {
   return (
     <div className="products  bg-white text-dark w-100 justify-content-between">
       <div>
         <img src={image1} alt="" />
-        <p>HEADPHONES</p>
+        <p className="m-0">HEADPHONES</p>
         <button className="btn">
           SHOP
           <svg
@@ -28,7 +28,7 @@ function Products() {
       </div>
       <div>
         <img src={image3} alt="" />
-        <p>SPEAKERS</p>
+        <p className="m-0">SPEAKERS</p>
         <button className="btn">
           SHOP
           <svg
@@ -48,7 +48,7 @@ function Products() {
       </div>
       <div>
         <img src={image2} alt="" />
-        <p>EARPHONES</p>
+        <p className="m-0">EARPHONES</p>
         <button className="btn">
           SHOP
           <svg

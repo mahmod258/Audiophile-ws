@@ -1,0 +1,42 @@
+.info {
+  gap: 10em;
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 5em;
+    h1:first-of-type {
+      display: none !important;
+    }
+    h1:last-of-type {
+      display: block !important;
+    }
+    img:first-of-type {
+      display: none !important;
+    }
+    img:last-of-type {
+      display: inline-block !important;
+    }
+  }
+  > div:first-child {
+    h1 {
+      font-size: 2.75em;
+      font-weight: 600;
+      margin-bottom: 1em;
+      letter-spacing: 2px;
+      > span {
+        display: block;
+        span {
+          color: var(--brown);
+        }
+      }
+    }
+    p {
+      line-height: 30px;
+      letter-spacing: 1.2px;
+      font-size: 1.1em;
+      span {
+        display: block;
+      }
+    }
+  }
+}
