@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Audiophile-ws/static/css/main.a1f16f75.css",
-    "main.js": "/Audiophile-ws/static/js/main.c6afda8f.js",
+    "main.css": "/Audiophile-ws/static/css/main.726a2c36.css",
+    "main.js": "/Audiophile-ws/static/js/main.62a50f17.js",
     "static/media/image-speaker-zx9.png": "/Audiophile-ws/static/media/image-speaker-zx9.153cd899b91a08b22b1a.png",
     "static/media/Bitmap.png": "/Audiophile-ws/static/media/Bitmap.112140981fdf55508201.png",
+    "static/media/image-best-gear.jpg": "/Audiophile-ws/static/media/image-best-gear.4d4a28e9e7c9ab158dd8.jpg",
+    "static/media/image-category-thumbnail-headphones.png": "/Audiophile-ws/static/media/image-category-thumbnail-headphones.fbd401d9c735a217286f.png",
+    "static/media/image-category-thumbnail-speakers.png": "/Audiophile-ws/static/media/image-category-thumbnail-speakers.bbb1a70b6ebc42d18df7.png",
+    "static/media/image-category-thumbnail-earphones.png": "/Audiophile-ws/static/media/image-category-thumbnail-earphones.6e8830d475e04b7b9627.png",
     "static/media/image-speaker-zx7.jpg": "/Audiophile-ws/static/media/image-speaker-zx7.173a4cb5c7acfc7f300c.jpg",
-    "static/media/image-removebg-preview(41).png": "/Audiophile-ws/static/media/image-removebg-preview(41).f72836b55676593b13c5.png",
-    "static/media/image-removebg-preview(42).png": "/Audiophile-ws/static/media/image-removebg-preview(42).98978d7e00ca409ca49c.png",
-    "static/media/image-removebg-preview(38).png": "/Audiophile-ws/static/media/image-removebg-preview(38).5b2403b7f5f0a9118856.png",
     "index.html": "/Audiophile-ws/index.html",
     "static/media/pattern-circles.svg": "/Audiophile-ws/static/media/pattern-circles.f4df3610b83b818abbbe.svg",
-    "main.a1f16f75.css.map": "/Audiophile-ws/static/css/main.a1f16f75.css.map",
-    "main.c6afda8f.js.map": "/Audiophile-ws/static/js/main.c6afda8f.js.map"
+    "main.726a2c36.css.map": "/Audiophile-ws/static/css/main.726a2c36.css.map",
+    "main.62a50f17.js.map": "/Audiophile-ws/static/js/main.62a50f17.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1f16f75.css",
-    "static/js/main.c6afda8f.js"
+    "static/css/main.726a2c36.css",
+    "static/js/main.62a50f17.js"
   ]
 }
