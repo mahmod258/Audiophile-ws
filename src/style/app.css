@@ -253,7 +253,7 @@ nav .small-menu {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    background-position: -120px -200px;
+    background-position: center -18em;
   }
   .section-1 > div:first-of-type img {
     width: 12.5em !important;
@@ -307,6 +307,12 @@ nav .small-menu {
   height: 3em;
   color: var(--white);
   letter-spacing: 1.2px;
+  border: 2px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.section-1 > div:last-of-type button:hover {
+  background-color: transparent;
 }
 
 .section-2 {
