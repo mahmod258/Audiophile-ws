@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../../assets/shared/desktop/image-best-gear.jpg";
-import image2 from "../../assets/shared/tablet/image-best-gear.jpg";
+import image from "../../../assets/shared/desktop/image-best-gear.jpg";
+import image2 from "../../../assets/shared/tablet/image-best-gear.jpg";
 function Info() {
   return (
     <div className="info container-md d-flex align-items-center">

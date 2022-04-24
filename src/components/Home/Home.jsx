@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "./Head/Head";
-import Products from "../Products/Products";
+import Products from "../Shared/Products/Products";
 import Sections from "./Sections/Sections";
-import Info from "../Info/Info";
+import Info from "../Shared/Info/Info";
 function Home() {
   return (
     <div className="home ">

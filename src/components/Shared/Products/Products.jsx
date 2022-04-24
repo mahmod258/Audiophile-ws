@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
-import image2 from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
-import image3 from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
+import image1 from "../../../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import image2 from "../../../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import image3 from "../../../assets/shared/desktop/image-category-thumbnail-earphones.png";
 
 function Products() {
   return (

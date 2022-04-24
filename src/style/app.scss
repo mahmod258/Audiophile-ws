@@ -1,10 +1,11 @@
-@use "../components/Nav/Nav";
+@use "../components/Shared/Nav/Nav";
 @use "../components/Home/Head/Head";
-@use "../components/Products/Products";
+@use "../components/Shared/Products/Products";
 @use "../components/Home/Sections/Section1.scss";
 @use "../components/Home/Sections/Section2.scss";
 @use "../components/Home/Sections/Section3.scss";
-@use "../components/Info/Info.scss";
+@use "../components/Shared/Info/Info.scss";
+@use "../components/Shared/Footer/Footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap");
 :root {
   --brown: #d87d4a;
