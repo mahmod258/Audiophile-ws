@@ -1,6 +1,7 @@
 import React from "react";
 import Products from "../Products/Products";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [toggle, setToggle] = useState(false);
@@ -24,10 +25,18 @@ function Nav() {
           <h1 className="m-0 fw-bolder">audiophile</h1>
         </div>
         <ul className="list-unstyled m-0">
-          <li className="d-inline ms-4 me-4 fw-bold">HOME</li>
-          <li className="d-inline ms-4 me-4 fw-bold">HEADPHONES</li>
-          <li className="d-inline ms-4 me-4 fw-bold">SPEAKERS</li>
-          <li className="d-inline ms-4 me-4 fw-bold">EARPHONES</li>
+          <li className="d-inline ms-4 me-4 fw-bold">
+            <Link to="/Audiophile-ws">HOME</Link>
+          </li>
+          <li className="d-inline ms-4 me-4 fw-bold">
+            <Link to="/Audiophile-ws/headphones">HEADPHONES</Link>
+          </li>
+          <li className="d-inline ms-4 me-4 fw-bold">
+            <Link to="/Audiophile-ws/speakers">SPEAKERS</Link>
+          </li>
+          <li className="d-inline ms-4 me-4 fw-bold">
+            <Link to="/Audiophile-ws/earphones">EARPHONES</Link>
+          </li>
         </ul>
         <svg
           width="24"

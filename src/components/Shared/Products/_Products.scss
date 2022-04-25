@@ -22,8 +22,9 @@
     button {
       font-size: 1.2em;
       font-weight: 600;
-
-      color: rgba(0, 0, 0, 0.5);
+      a {
+        color: rgba(0, 0, 0, 0.5);
+      }
       &:hover {
         color: var(--brown) !important;
       }

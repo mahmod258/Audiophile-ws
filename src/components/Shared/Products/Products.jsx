@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "../../../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import image2 from "../../../assets/shared/desktop/image-category-thumbnail-speakers.png";
 import image3 from "../../../assets/shared/desktop/image-category-thumbnail-earphones.png";
-
+import { Link } from "react-router-dom";
 function Products() {
   return (
     <div className="products  bg-white text-dark w-100 justify-content-between">
@@ -10,7 +10,7 @@ function Products() {
         <img src={image1} alt="" />
         <p className="m-0">HEADPHONES</p>
         <button className="btn">
-          SHOP
+          <Link to="/Audiophile-ws/headphones">SHOP</Link>
           <svg
             width="7"
             height="12"
@@ -30,7 +30,7 @@ function Products() {
         <img src={image3} alt="" />
         <p className="m-0">SPEAKERS</p>
         <button className="btn">
-          SHOP
+          <Link to="/Audiophile-ws/speakers">SHOP</Link>
           <svg
             width="7"
             height="12"
@@ -50,7 +50,7 @@ function Products() {
         <img src={image2} alt="" />
         <p className="m-0">EARPHONES</p>
         <button className="btn">
-          SHOP
+          <Link to="/Audiophile-ws/earphones">SHOP</Link>
           <svg
             width="7"
             height="12"
