@@ -25,6 +25,7 @@
       font-weight: 600;
       margin-bottom: 1em;
       letter-spacing: 2px;
+      white-space: nowrap;
       > span {
         display: block;
         span {
@@ -32,13 +33,11 @@
         }
       }
     }
-    p {
-      line-height: 2em;
-      letter-spacing: 1.2px;
-      font-size: 1.1em;
-      span {
-        display: block;
-      }
+    h1:last-of-type {
+      font-size: 2.2em;
     }
+  }
+  img {
+    border-radius: 5px;
   }
 }

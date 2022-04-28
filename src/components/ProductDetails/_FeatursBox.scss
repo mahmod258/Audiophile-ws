@@ -1,0 +1,61 @@
+.featursBox {
+  gap: 5em;
+  p,
+  li {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    > div:first-of-type {
+      width: 100% !important;
+    }
+    > div:last-of-type {
+      width: 80% !important;
+      flex-direction: row !important;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 1000px) {
+    > div:last-of-type {
+      flex-direction: column !important;
+    }
+  }
+  @media (max-width: 550px) {
+    ul {
+      li {
+        font-size: 1.5em;
+      }
+    }
+  }
+  > div:first-of-type {
+    width: 70%;
+    h1 {
+      font-weight: bold;
+      font-size: 2.2em;
+      letter-spacing: 1.6px;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  > div:last-of-type {
+    width: 30%;
+    h1 {
+      font-weight: bold;
+      font-size: 2.2em;
+      letter-spacing: 1.6px;
+      margin-bottom: 1em;
+    }
+    ul {
+      li {
+        margin-bottom: 0.8em;
+        span {
+          color: var(--brown);
+          font-weight: bold;
+          margin-right: 0.8em;
+        }
+      }
+    }
+  }
+}

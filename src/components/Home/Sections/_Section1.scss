@@ -54,16 +54,14 @@
       margin-top: 0.5em;
       border: 0;
       background-color: black;
-      width: 11em;
-      height: 3.5em;
-      font-weight: 800;
-      font-size: 0.8em;
       color: var(--white);
-      letter-spacing: 1.2px;
       border: 2px solid black;
       transition: 0.3s;
       &:hover {
         background-color: transparent;
+        a {
+          color: var(--white);
+        }
       }
     }
   }

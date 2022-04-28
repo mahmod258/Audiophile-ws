@@ -27,7 +27,7 @@ function Products() {
         </button>
       </div>
       <div>
-        <img src={image3} alt="" />
+        <img src={image2} alt="" />
         <p className="m-0">SPEAKERS</p>
         <button className="btn">
           <Link to="/Audiophile-ws/speakers">SHOP</Link>
@@ -47,7 +47,7 @@ function Products() {
         </button>
       </div>
       <div>
-        <img src={image2} alt="" />
+        <img src={image3} alt="" />
         <p className="m-0">EARPHONES</p>
         <button className="btn">
           <Link to="/Audiophile-ws/earphones">SHOP</Link>

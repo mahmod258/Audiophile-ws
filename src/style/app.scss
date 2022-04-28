@@ -7,6 +7,11 @@
 @use "../components/Shared/Info/Info.scss";
 @use "../components/Shared/Footer/Footer.scss";
 @use "../components/ProductsPgs/ProductsPgs.scss";
+@use "../components/ProductDetails/ProductDetails.scss";
+@use "../components/ProductDetails/Product.scss";
+@use "../components/ProductDetails/FeatursBox";
+@use "../components/ProductDetails/Form.scss";
+@use "../components/ProductDetails/Suggestion";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap");
 :root {
   --brown: #d87d4a;
@@ -35,5 +40,38 @@ a {
   text-decoration: none;
   &:hover {
     color: var(--brown);
+  }
+}
+.new {
+  color: var(--brown);
+  letter-spacing: 10px;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.button {
+  width: 11em;
+  height: 3.5em;
+  font-weight: 800;
+  font-size: 0.8em;
+  transition: 0.3s;
+  letter-spacing: 1.2px;
+  border: 0;
+  background-color: transparent;
+}
+.text {
+  line-height: 1.75em;
+  letter-spacing: 1.2px;
+  font-size: 1.1em;
+  span {
+    display: block;
+  }
+}
+.title {
+  font-weight: bold;
+  font-size: 2.75em;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  span {
+    display: block;
   }
 }

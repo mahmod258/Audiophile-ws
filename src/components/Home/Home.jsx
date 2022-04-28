@@ -3,7 +3,6 @@ import Head from "./Head/Head";
 import Products from "../Shared/Products/Products";
 import Sections from "./Sections/Sections";
 import Info from "../Shared/Info/Info";
-
 function Home({ func }) {
   return (
     <div className="home ">
