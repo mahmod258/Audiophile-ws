@@ -631,6 +631,7 @@ footer > div > div:last-child > div:last-child > svg:last-of-type:hover {
 .product {
   padding-top: 14em;
   gap: 7em;
+  margin-bottom: 6em;
 }
 @media (max-width: 1200px) {
   .product img:first-of-type {
@@ -880,11 +881,8 @@ footer > div > div:last-child > div:last-child > svg:last-of-type:hover {
 }
 
 a {
-  color: var(--white);
+  color: var(--white) !important;
   text-decoration: none;
-}
-a:hover {
-  color: var(--brown);
 }
 
 .new {

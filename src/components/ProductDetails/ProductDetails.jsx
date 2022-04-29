@@ -5,12 +5,12 @@ import Form from "./Form";
 import Suggestion from "./Suggestion";
 import Products from "../Shared/Products/Products";
 
-function ProductDetails({ product, products }) {
+function ProductDetails({ product, products, card, setCard }) {
   let sug = Object.values(products);
   let exp = [...sug[0], ...sug[1], ...sug[2]];
   const [suggestions, setSuggestions] = useState([]);
   for (let i = 0; i < exp.length; i++) {
-    if (exp[i].name !== product.name && suggestions.length < 3) {
+    if (exp[i].id !== product.id && suggestions.length < 3) {
       setSuggestions([...suggestions, exp[i]]);
       let arr = suggestions;
       arr.push(exp[i]);
@@ -19,8 +19,7 @@ function ProductDetails({ product, products }) {
   }
   return (
     <div className="productDetails container-md">
-      md
-      <Product product={product} />
+      <Product product={product} card={card} setCard={setCard} />
       <FeatursBox featurs={product.featurs} inTheBox={product.inTheBox} />
       <Form imgs={product.imgs} />
       <Suggestion sug={suggestions} />

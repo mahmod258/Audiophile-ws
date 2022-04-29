@@ -22,7 +22,9 @@ function Nav() {
             <rect y="6" width="16" height="3" fill="white" />
             <rect y="12" width="16" height="3" fill="white" />
           </svg>
-          <h1 className="m-0 fw-bolder">audiophile</h1>
+          <Link to="/Audiophile-ws">
+            <h1 className="m-0 fw-bolder">audiophile</h1>
+          </Link>
         </div>
         <ul className="list-unstyled m-0">
           <li className="d-inline ms-4 me-4 fw-bold">

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Home from "./components/Home/Home";
 import ProductsPgs from "./components/ProductsPgs/ProductsPgs";
 import Nav from "./components/Shared/Nav/Nav";
@@ -46,8 +47,8 @@ import imgsEp12 from "./assets/product-yx1-earphones/desktop/image-gallery-2.jpg
 import imgsEp13 from "./assets/product-yx1-earphones/desktop/image-gallery-3.jpg";
 
 function App() {
-  const products = {
-    headphones: [
+  const products = [
+    [
       {
         name: "XX99 MARK II HEADPHONES",
         smName: "XX99 MARK II",
@@ -142,7 +143,7 @@ function App() {
         ],
       },
     ],
-    speakers: [
+    [
       {
         name: "ZX9 SPEAKER",
         smName: null,
@@ -207,7 +208,7 @@ function App() {
         ],
       },
     ],
-    earphones: [
+    [
       {
         name: "YX1 WIRELESS EARPHONES",
         smName: null,
@@ -240,7 +241,9 @@ function App() {
         ],
       },
     ],
-  };
+  ];
+  const [card, setCard] = useState([]);
+  console.log(card);
   return (
     <main>
       <Router>
@@ -249,44 +252,61 @@ function App() {
           <Route path="/Audiophile-ws" element={<Home />} />
           <Route
             path="/Audiophile-ws/headphones"
-            element={
-              <ProductsPgs product={products.headphones} obj={products} />
-            }
+            element={<ProductsPgs product={products[0]} obj={products} />}
           />
-          {products.headphones.map((el, i) => {
+          {products[0].map((el, i) => {
             return (
               <Route
                 key={i}
                 path={el.path}
-                element={<ProductDetails product={el} products={products} />}
+                element={
+                  <ProductDetails
+                    product={el}
+                    products={products}
+                    card={card}
+                    setCard={setCard}
+                  />
+                }
               />
             );
           })}
           <Route
             path="/Audiophile-ws/speakers"
-            element={<ProductsPgs product={products.speakers} obj={products} />}
+            element={<ProductsPgs product={products[1]} obj={products} />}
           />
-          {products.speakers.map((el, i) => {
+          {products[1].map((el, i) => {
             return (
               <Route
                 key={i}
                 path={el.path}
-                element={<ProductDetails product={el} products={products} />}
+                element={
+                  <ProductDetails
+                    product={el}
+                    products={products}
+                    card={card}
+                    setCard={setCard}
+                  />
+                }
               />
             );
           })}
           <Route
             path="/Audiophile-ws/earphones"
-            element={
-              <ProductsPgs product={products.earphones} obj={products} />
-            }
+            element={<ProductsPgs product={products[2]} obj={products} />}
           />
-          {products.earphones.map((el, i) => {
+          {products[2].map((el, i) => {
             return (
               <Route
                 key={i}
                 path={el.path}
-                element={<ProductDetails product={el} products={products} />}
+                element={
+                  <ProductDetails
+                    product={el}
+                    products={products}
+                    card={card}
+                    setCard={setCard}
+                  />
+                }
               />
             );
           })}

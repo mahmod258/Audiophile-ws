@@ -36,11 +36,8 @@ main {
   }
 }
 a {
-  color: var(--white);
+  color: var(--white) !important;
   text-decoration: none;
-  &:hover {
-    color: var(--brown);
-  }
 }
 .new {
   color: var(--brown);

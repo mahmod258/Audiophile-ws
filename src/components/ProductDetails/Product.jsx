@@ -1,7 +1,27 @@
 import React, { useState } from "react";
 
-function Product({ product }) {
-  const [num, setNum] = useState(0);
+function Product({ product, card, setCard }) {
+  const [num, setNum] = useState(1);
+  const addToCard = () => {
+    let inCard = false;
+    let where = null;
+    for (let i = 0; i < card.length; i++) {
+      if (card[i].product.name === product.name) {
+        inCard = true;
+        where = i;
+      }
+    }
+    if (!inCard) {
+      let arr = card;
+      arr.push({ product, num });
+      setCard(arr);
+    } else if (inCard) {
+      let arr = card;
+      card[0] = { product, num };
+      setCard(arr);
+    }
+    console.log(card);
+  };
   return (
     <div className="product d-flex align-items-center justify-content-between">
       <img className="w-50" src={product.img} alt="" />
@@ -15,7 +35,7 @@ function Product({ product }) {
           <div className=" d-flex align-items-center justify-content-between">
             <div
               className="h-100 d-flex align-items-center justify-content-center"
-              onClick={() => (num !== 0 ? setNum(num - 1) : null)}
+              onClick={() => (num !== 1 ? setNum(num - 1) : null)}
             >
               <span>-</span>
             </div>
@@ -27,7 +47,9 @@ function Product({ product }) {
               <span>+</span>
             </div>
           </div>
-          <button className="button">ADD TO CART</button>
+          <button className="button" onClick={addToCard}>
+            ADD TO CART
+          </button>
         </div>
       </div>
     </div>

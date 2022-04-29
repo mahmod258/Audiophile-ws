@@ -5,9 +5,9 @@ function Suggestion({ sug }) {
     <div className="suggestion">
       <h1 className="title">YOU MAY ALSO LIKE</h1>
       <div className="d-flex justify-content-between">
-        {sug.map((el) => {
+        {sug.map((el, i) => {
           return (
-            <div>
+            <div key={i}>
               <img src={el.img} alt="" />
               <p>{el.smName === null ? el.name : el.smName}</p>
               <button className="button">SEE PRODUCT</button>
