@@ -3,6 +3,7 @@ nav {
   z-index: 100;
   width: 100%;
   position: absolute !important;
+  margin-top: 0 !important;
   @media (max-width: 1000px) {
     > div:first-child {
       ul {

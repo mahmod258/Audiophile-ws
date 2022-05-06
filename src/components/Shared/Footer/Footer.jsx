@@ -1,16 +1,27 @@
-import React from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { ContextCart } from "../../Conetxt/Cart";
 
 function Footer() {
+  const [cart] = useContext(ContextCart);
   return (
     <footer className="text-white ">
       <div className="container-md d-flex flex-column">
         <div className="d-flex justify-content-between w-100">
           <h3>audiophile</h3>
           <div className="d-flex">
-            <p>HOME</p>
-            <p>HEADPHONES</p>
-            <p>SPEAKERS</p>
-            <p>EARPHONES</p>
+            <Link to="/Audiophile-ws">
+              <p>Home</p>
+            </Link>
+            <Link to="/Audiophile-ws/headphones">
+              <p>HEADPHONES</p>
+            </Link>
+            <Link to="/Audiophile-ws/speaker">
+              <p>SPEAKERS</p>
+            </Link>
+            <Link to="/Audiophile-ws/earphones">
+              <p>EARPHONES</p>
+            </Link>
           </div>
         </div>
         <p>

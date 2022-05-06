@@ -48,35 +48,5 @@
         margin-bottom: 3em;
       }
     }
-    > div {
-      gap: 20px;
-      > div {
-        background-color: var(--gray);
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 8em;
-        height: 3em;
-        > div {
-          cursor: pointer;
-        }
-        span {
-          font-weight: bold;
-          font-size: 1em;
-          &:first-of-type,
-          &:last-of-type {
-            color: rgba(0, 0, 0, 0.25);
-            font-size: 1.2em;
-            cursor: pointer;
-          }
-        }
-      }
-      button {
-        color: var(--white);
-        background-color: var(--brown);
-        &:hover {
-          background-color: var(--light-brown);
-        }
-      }
-    }
   }
 }

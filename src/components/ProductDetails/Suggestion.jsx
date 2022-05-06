@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Suggestion({ sug }) {
   return (
@@ -10,7 +11,9 @@ function Suggestion({ sug }) {
             <div key={i}>
               <img src={el.img} alt="" />
               <p>{el.smName === null ? el.name : el.smName}</p>
-              <button className="button">SEE PRODUCT</button>
+              <Link to={el.path}>
+                <button className="button">SEE PRODUCT</button>
+              </Link>
             </div>
           );
         })}
