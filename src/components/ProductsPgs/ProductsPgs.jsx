@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Products from ".././Shared/Products/Products";
 import Nav from "../Shared/Nav/Nav";
 import { Link } from "react-router-dom";
+import Footer from "../Shared/Footer/Footer";
 
 function ProductsPgs({ product }) {
   useEffect(() => {
@@ -37,6 +38,7 @@ function ProductsPgs({ product }) {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,122 @@
+.checkout {
+  padding-top: 12em;
+  p {
+    margin: 0;
+  }
+  > div {
+    background-color: var(--white);
+  }
+  > div:first-child {
+    width: 65%;
+    padding: 3.5em;
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 1em;
+    }
+    .aTitle {
+      color: var(--brown);
+      font-weight: 800;
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    .input {
+      padding: 0.75em;
+      font-weight: 600;
+      border-radius: 8px;
+      padding-left: 1.5em;
+      border: 2px solid #cfcfcf;
+    }
+    .smTitle {
+      color: var(--black);
+      font-weight: 800;
+      font-size: 0.8em;
+      margin-bottom: 0.5em;
+    }
+    > div {
+      > div {
+        > div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 1.5em;
+          > div {
+            width: 48.5%;
+            margin-bottom: 1.5em;
+            input {
+              width: 100%;
+              &::placeholder {
+                color: black;
+                font-weight: 600;
+                opacity: 0.4;
+              }
+            }
+          }
+        }
+      }
+      .paymentMethod {
+        > div {
+          gap: 1.4em;
+          .chose {
+            border-color: var(--brown);
+            > div {
+              &::before {
+                content: "";
+                display: block;
+                background-color: var(--brown);
+                width: 15px;
+                height: 15px;
+                border-radius: 100px;
+              }
+            }
+          }
+          > div {
+            padding: 0.75em;
+            font-weight: 600;
+            border-radius: 8px;
+            padding-left: 1.5em;
+            border: 2px solid #cfcfcf;
+            font-weight: 800;
+            > div {
+              width: 25px;
+              height: 25px;
+              border-radius: 100px;
+              cursor: pointer;
+              margin-right: 1em;
+              border: 2px solid #cfcfcf;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  > div:last-child {
+    padding: 2em;
+    width: 30%;
+    height: fit-content;
+    font-weight: 600;
+    h4 {
+      font-weight: 600;
+      letter-spacing: 1.2px;
+    }
+    > div:nth-child(2) {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+    > div:nth-child(3) {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 800;
+      p {
+        span:last-of-type {
+          color: var(--black);
+        }
+      }
+    }
+    input {
+      margin-top: 3em;
+    }
+  }
+}

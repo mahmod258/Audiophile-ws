@@ -6,6 +6,7 @@ import Suggestion from "./Suggestion";
 import Products from "../Shared/Products/Products";
 import Nav from "../Shared/Nav/Nav";
 import Info from "../Shared/Info/Info";
+import Footer from "../Shared/Footer/Footer";
 
 function ProductDetails({ product, products }) {
   const [suggestions, setSuggestions] = useState([]);
@@ -37,6 +38,7 @@ function ProductDetails({ product, products }) {
         <Suggestion sug={suggestions} />
         <Products />
       </div>
+      <Footer />
     </>
   );
 }

@@ -28,6 +28,26 @@ nav {
     h1 {
       font-size: 1.5em;
     }
+    .cart-icon {
+      position: relative;
+      cursor: pointer;
+      > span {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: var(--brown);
+        border-radius: 100px;
+        padding: 10px;
+        display: flex;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: 600;
+        }
+      }
+    }
     @media (max-width: 780px) {
       padding-left: 20px;
       padding-right: 20px;
@@ -48,9 +68,7 @@ nav {
         font-weight: lighter;
       }
     }
-    svg {
-      cursor: pointer;
-    }
+
     svg {
       width: 1.5em;
       height: 1.5em;

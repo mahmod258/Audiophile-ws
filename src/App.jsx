@@ -253,7 +253,6 @@ function App() {
     ],
   ];
   const [filter] = useContext(ContextFilter);
-  console.log(filter);
   return (
     <main
       style={{
@@ -292,7 +291,6 @@ function App() {
             })}
             <Route path="/Audiophile-ws/checkout" element={<Checkout />} />
           </Routes>
-          <Footer />
         </Router>
       </Cart>
     </main>

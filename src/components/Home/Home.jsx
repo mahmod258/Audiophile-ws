@@ -4,6 +4,8 @@ import Products from "../Shared/Products/Products";
 import Sections from "./Sections/Sections";
 import Info from "../Shared/Info/Info";
 import Nav from "../Shared/Nav/Nav";
+import Footer from "../Shared/Footer/Footer";
+
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,6 +21,7 @@ function Home() {
         <Sections />
         <Info />
       </div>
+      <Footer />
     </>
   );
 }
