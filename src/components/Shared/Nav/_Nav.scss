@@ -74,11 +74,10 @@ nav {
       height: 1.5em;
     }
   }
-  .small-menu {
-    display: none;
-    background-color: var(--white);
-    padding: 7em 2em;
-    padding-bottom: 4em;
-    width: 100%;
-  }
+}
+.small-menu {
+  background-color: var(--white);
+  padding: 11em 2em;
+  padding-bottom: 4em;
+  width: 100%;
 }
