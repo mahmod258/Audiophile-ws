@@ -1,0 +1,59 @@
+.paid {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  width: 581px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: var(--white);
+  padding: 3em;
+  border-radius: 10px;
+  .success {
+    display: inline;
+    padding: 1.2em;
+    border-radius: 100px;
+    background-color: var(--brown);
+  }
+  h1 {
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 0.6em;
+    span {
+      display: block;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .whatYouBought {
+    > div:first-child {
+      width: 55%;
+      background-color: rgb(241, 241, 241);
+      padding: 1em 1.5em;
+      .other {
+        margin-left: 20%;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 800;
+      }
+    }
+    > div:last-child {
+      width: 45%;
+      background-color: var(--black);
+      padding-left: 2em;
+      p {
+        color: var(--white);
+        &:first-of-type {
+          color: rgba(255, 255, 255, 0.5);
+          margin-bottom: 0.6em;
+        }
+      }
+    }
+  }
+  button {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    height: auto;
+  }
+}

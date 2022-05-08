@@ -3,6 +3,7 @@ import Nav from "../Shared/Nav/Nav";
 import Footer from "../Shared/Footer/Footer";
 import Paid from "./Paid";
 import { ContextCart } from "../Conetxt/Cart";
+import { useNavigate } from "react-router-dom";
 
 function Checkout() {
   const [cart] = useContext(ContextCart);
@@ -34,6 +35,10 @@ function Checkout() {
     let arr = ["", ""];
     arr[num] = "chose";
     setChose(arr);
+  };
+  let navigate = useNavigate();
+  window.onload = () => {
+    navigate("/Audiophile-ws");
   };
   return (
     <>
@@ -178,10 +183,11 @@ function Checkout() {
             className="button2 button"
             type="submit"
             value="CONTINUE & PAY"
+            onClick={() => setPaid(true)}
           />
         </div>
       </form>
-      <Paid />
+      {paid ? <Paid /> : null}
       <Footer />
     </>
   );

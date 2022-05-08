@@ -11,7 +11,8 @@ function Product({ product }) {
       <img className="w-50" src={product.tbImg} alt="" />
       <div className="w-50 ">
         <h5 className="new">{product.new ? "NEW PRODUCT" : null}</h5>
-        {product.title}
+        <h1 className="fw-bold title">{product.name}</h1>
+
         <p className="text">{product.pragraph}</p>
         <p className="fw-bold">{product.worth}</p>
         <div className="d-flex inc-dec">

@@ -57,12 +57,6 @@ function App() {
         id: 0,
         name: "XX99 MARK II HEADPHONES",
         smName: "XX99 MARK II",
-        title: (
-          <h1 className="fw-bold title">
-            <span>XX99 MARK II</span>
-            <span>HEADPHONES</span>
-          </h1>
-        ),
         new: true,
         img: headphone1,
         tbImg: tbHeadphone1,
@@ -89,13 +83,6 @@ function App() {
         id: 1,
         name: "XX99 MARK I HEADPHONES",
         smName: "XX99 MARK I",
-        title: (
-          <h1 className="fw-bold title">
-            <span>XX99 MARK I</span>
-            <span>HEADPHONES</span>
-          </h1>
-        ),
-
         new: false,
         img: headphone2,
         tbImg: tbHeadphone2,
@@ -121,13 +108,6 @@ function App() {
         id: 2,
         name: "XX59 Headphones",
         smName: "XX59",
-        title: (
-          <h1 className="fw-bold title">
-            <span>XX59</span>
-            <span>HEADPHONES</span>
-          </h1>
-        ),
-
         new: false,
         img: headphone3,
         tbImg: tbHeadphone3,
@@ -155,13 +135,6 @@ function App() {
         id: 3,
         name: "ZX9 SPEAKER",
         smName: "ZX9",
-        title: (
-          <h1 className="fw-bold title">
-            <span>ZX9</span>
-            <span>SPEAKER</span>
-          </h1>
-        ),
-
         new: true,
         img: speaker1,
         tbImg: tbSpeaker1,
@@ -188,12 +161,6 @@ function App() {
         id: 4,
         name: "ZX7 SPEAKER",
         smName: null,
-        title: (
-          <h1 className="fw-bold title">
-            <span>ZX7</span>
-            <span>SPEAKER</span>
-          </h1>
-        ),
         new: false,
         img: speaker2,
         tbImg: tbSpeaker2,
@@ -222,12 +189,6 @@ function App() {
         id: 5,
         name: "YX1 WIRELESS EARPHONES",
         smName: "YX1",
-        title: (
-          <h1 className="fw-bold title">
-            <span>YX1 WIRELESS</span>
-            <span>EARPHONES</span>
-          </h1>
-        ),
         new: true,
         img: earphone1,
         tbImg: tbSpeaker2,
