@@ -5,6 +5,19 @@
   top: 50%;
   left: 50%;
   width: 581px;
+  @media (max-width: 615px) {
+    width: 95vw !important;
+    .whatYouBought {
+      flex-direction: column !important;
+      > div {
+        width: 100% !important;
+      }
+      > div:last-of-type {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
   transform: translate(-50%, -50%);
   z-index: 3;
   background-color: var(--white);
@@ -28,6 +41,7 @@
     margin: 0;
   }
   .whatYouBought {
+    flex-direction: column;
     > div:first-child {
       width: 55%;
       background-color: rgb(241, 241, 241);
