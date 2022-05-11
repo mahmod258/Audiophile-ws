@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Audiophile-ws/static/css/main.c9865180.css",
+    "main.css": "/Audiophile-ws/static/css/main.4a592173.css",
     "main.js": "/Audiophile-ws/static/js/main.b2e52b0f.js",
     "static/media/image-speaker-zx9.png": "/Audiophile-ws/static/media/image-speaker-zx9.153cd899b91a08b22b1a.png",
     "static/media/Bitmap.png": "/Audiophile-ws/static/media/Bitmap.112140981fdf55508201.png",
@@ -18,11 +18,11 @@
     "static/media/image-xx99-mark-two-headphones.jpg": "/Audiophile-ws/static/media/image-xx99-mark-two-headphones.0ead05d95f8a7e5e17d2.jpg",
     "index.html": "/Audiophile-ws/index.html",
     "static/media/pattern-circles.svg": "/Audiophile-ws/static/media/pattern-circles.f4df3610b83b818abbbe.svg",
-    "main.c9865180.css.map": "/Audiophile-ws/static/css/main.c9865180.css.map",
+    "main.4a592173.css.map": "/Audiophile-ws/static/css/main.4a592173.css.map",
     "main.b2e52b0f.js.map": "/Audiophile-ws/static/js/main.b2e52b0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9865180.css",
+    "static/css/main.4a592173.css",
     "static/js/main.b2e52b0f.js"
   ]
 }
